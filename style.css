@@ -1,0 +1,29 @@
+
+.slideshow-containner{
+   align-items: center;
+   display: flex;
+   justify-content: center;
+   height: 100vh;
+   background-color:aliceblue;
+}
+.slideshow-element{
+    position: absolute;
+    text-align: center;
+    transform: translate(-50%,-50%)scale(0);
+    transition:transform 0.6s;
+
+}
+.slideshow-element h1{
+     color: brown;
+}
+img{
+    border-radius: 80%;
+    border: solid red 2px;
+}
+
+.slideshow-element.current{
+   
+    transform: translate(-50%,-50%) scale(1);
+    transition:transform 0.6s;
+
+}
